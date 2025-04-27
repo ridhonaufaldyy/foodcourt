@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="id">
 
@@ -383,4 +384,342 @@
 
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodcourt FPMIPA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .slider-item {
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-gray-800">
+  <!-- Navbar + Hero -->
+  <header class="relative">
+    <div class="bg-[#F8F7F2] top-0 left-0 right-0 z-50">
+      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">Foodcourt FPMIPA</h1>
+        <button id="menu-toggle" class="md:hidden text-2xl">☰</button>
+        <nav class="navbar">
+          <a class="navbar-logo" href="">Foodcourt FPMIPA</a>
+        </nav>
+        <button class="navbar-burger" onclick="toggleMenu()"></button>
+        <nav class="menu">
+          <a href="#" style="animation-delay: 0.1s">Home</a>
+          <a href="#about" style="animation-delay: 0.2s">About</a>
+          <a href="#products" style="animation-delay: 0.3s">Menu Terpopular</a>
+          <a href="#partners" style="animation-delay: 0.4s">Partner Kami</a>
+          <a href="#contact" style="animation-delay: 0.5s">Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Hero Slider -->
+    <div class="min-h-screen flex items-center justify-center">
+      <div class="relative w-full h-screen overflow-hidden">
+        <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+          <div class="min-w-full h-screen relative slider-item flex items-center justify-center px-4 text-center"
+            style="background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1600&q=80');">
+            <div class="absolute inset-0 bg-black/70"></div>
+            <div class="relative z-10 text-white">
+              <h2 class="text-4xl font-bold mb-3">Selamat Datang di Foodcourt FPMIPA</h2>
+              <p class="text-xl">Rasakan makanan khas kampus dengan cita rasa istimewa!</p>
+            </div>
+          </div>
+
+          <div class="min-w-full h-screen relative slider-item flex items-center justify-center px-4 text-center"
+            style="background-image: url('hero-2.jpg');">
+            <div class="absolute inset-0 bg-black/70"></div>
+            <div class="relative z-10 text-white">
+              <h2 class="text-4xl font-bold mb-3">FOODCOURT FPMIPA</h2>
+              <p class="text-xl">Tempat yang nyaman buat melepaskan aktivitas sejenak dengan sajian makanan yang khas</p>
+            </div>
+          </div>
+
+          <div class="min-w-full h-screen relative slider-item flex items-center justify-center px-4 text-center"
+            style="background-image: url('foodcourt-logo.jpg');">
+            <div class="absolute inset-0 bg-black/70"></div>
+            <div class="relative z-10 text-white">
+              <h2 class="text-4xl font-bold mb-3">SLOGAN FOODCOURT FPMIPA</h2>
+              <p class="text-xl">Rasa Istimewa Harga Mahasiswa</p>
+            </div>
+          </div>
+          <!-- Tambah Slide lain jika perlu -->
+        </div>
+        <button id="prevBtn"
+          class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/0 text-white p-2 rounded-full hover:bg-white/0">
+          &#10094;
+        </button>
+        <button id="nextBtn"
+          class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/0 text-white p-2 rounded-full hover:bg-white/0">
+          &#10095;
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sections -->
+  <main class="space-y-16">
+    <section id="about" class="section py-16 min-h-screen flex items-center relative font-['Fira_Sans'] bg-[#F8F7F2]">
+      <!-- Content -->
+      <div class="container mx-auto px-4 relative z-10 text-grey-600">
+        <h2 class="text-4xl mb-6 text-center text-grey-600 font-['Fira_Sans'] font-bold">Tentang Kami</h2>
+        <p class="max-w-3xl mx-auto text-justify">
+          Foodcourt FPMIPA adalah tempat makan yang hadir khusus untuk memenuhi kebutuhan staff pengajar (Dosen), Staff
+          tenaga pendidik, dan mahasiswa dengan menyediakan berbagai macam masakan rumahan yang lezat, sehat, dan
+          terjangkau. Tidak seperti foodcourt pada umumnya yang memiliki banyak tenant, seluruh sajian di Foodcourt
+          FPMIPA dikelola secara terpusat untuk menjaga kualitas rasa, kebersihan, dan keseragaman harga.
+
+          Kami memahami betapa pentingnya makanan yang bergizi dengan harga yang bersahabat bagi kehidupan kampus. Oleh
+          karena itu, setiap menu yang kami hadirkan dirancang untuk menyesuaikan dengan selera.
+
+          Dengan suasana yang nyaman dan pelayanan yang ramah.</p>
+      </div>
+    </section>
+
+    <section id="products" class="section py-16 min-h-screen flex items-center">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-12">Menu Terpopular</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+          <!-- Menu Item 1 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="https://cdn-brilio-net.akamaized.net/news/2025/02/10/320004/1200xauto-resep-nasi-goreng-kencur-telur-ceplok-menu-sahur-simpel-dan-lezat-2502106.jpg"
+              alt="Nasi Goreng" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Nasi Goreng</h3>
+              <p class="text-gray-600 mb-4">nasi goreng kencur telur ceplok, dan bumbu rempah pilihan.</p>
+            </div>
+          </div>
+
+          <!-- Menu Item 2 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="https://cdn.yummy.co.id/content-images/images/20230916/fe74073f014c83d8dbaa93cb7e94270f.jpg?x-oss-process=image/format,webp"
+              alt="Soto" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Soto Ayam</h3>
+              <p class="text-gray-600 mb-4">Soto Ayam Kuning dengan rempah pilihan</p>
+            </div>
+          </div>
+
+          <!-- Menu Item 3 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="https://lingkarwilis.com/wp-content/uploads/2024/03/2024-03-14-15_17_52-Window.png"
+              alt="Mie Goreng" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Ayam Geprek</h3>
+              <p class="text-gray-600 mb-4">Ayam Geprek Crispy di lumuri dengan sambal khas</p>
+            </div>
+          </div>
+
+          <!-- Menu Item 4 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="https://wiratech.co.id/wp-content/uploads/2018/11/aneka-minuman-segar.jpg"
+              alt="Pizza" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Juice and Soft Drinks </h3>
+              <p class="text-gray-600 mb-4">Menyediakan neka jus buah pilihan asli dan juga aneka minuman yang segar</p>
+            </div>
+          </div>
+    </section>
+
+
+
+
+    <section id="partners" class="py-16 bg-[#F8F7F2] min-h-screen flex justify-center items-center">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10">Partner Bisnis Kami</h2>
+        <p class="text-gray-600 max-w-xl mx-auto mb-12">
+          Kami bekerja sama dengan berbagai partner terpercaya untuk memberikan kualitas dan pelayanan terbaik kepada pelanggan kami.
+        </p>
+    
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 items-center justify-center">
+          <!-- Logo 1 -->
+          <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Sosro.svg/2048px-Sosro.svg.png" alt="Microsoft" class="h-12 mx-auto ">
+          </div>
+          <!-- Logo 2 -->
+          <div>
+            <img src="https://karirlab-prod-bucket.s3.ap-southeast-1.amazonaws.com/files/privates/aHR0cHM6Ly9jZG4uc2VqdXRhY2l0YS5pZC82MzYwODg0ZDgyNzIyMjAwMTMzZWM1N2IvSm9iUG9ydGFsQ29tcGFueUxvZ28vMGFhYWVjYWUtOTFiYi00MTUxLTkzNmEtNDMyNGM1Yzc4YTZkLnBuZw%3D%3D.png" alt="Telkom Indonesia" class="h-12 mx-auto ">
+          </div>
+          <!-- Logo 3 -->
+          <div>
+            <img src="https://www.logo.wine/a/logo/Indofood/Indofood-Logo.wine.svg" alt="Apple" class="h-12 mx-auto ">
+          </div>
+          <!-- Logo 4 -->
+          <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOaE7IM6DmTXHgzAeHcZ24S6CkLiU10DpzPA&s" alt="Google" class="h-12 mx-auto ">
+          </div>
+        </div>
+      <div>
+        <img class=" w-32 h-32 mx-auto " src="logo_ananda_produk.png" alt="Ananda Produk">
+      </div>
+    </section>
+
+        <!-- Kontak Kami -->
+        <section id="contact" class="py-16  flex items-center">
+          <div class="container mx-auto px-6 md:px-12 text-center">
+            <!-- Logo -->
+            <div class="flex justify-center mb-6">
+              <img src="foodcourt-logo.jpg" alt="Kontak Icon" class="w-32 h-30">
+            </div>
+        
+            <!-- Judul -->
+            <h2 class="text-3xl font-bold mb-4 font-serif text-gray-800">Kontak Kami</h2>
+        
+            <!-- Narasi -->
+            <p class="text-gray-700 max-w-xl mx-auto text-lg mb-6">
+              Punya pertanyaan, saran, atau ingin kerja sama dengan kami? Jangan ragu untuk menghubungi kami melalui kontak yang tersedia. Kami siap membantu dan merespons dengan cepat selama jam operasional.
+            </p>
+        
+            <!-- Informasi Kontak -->
+            <p class="text-xl font-semibold text-gray-900">
+              📞 Telepon: <a href="https://wa.me/628112190090" class="text-blue-600 hover:underline">0811-2190-090</a>
+            </p>
+          </div>
+        </section>
+        
+    
+    <footer class="bg-gray-900 text-white font-serif py-10">
+      <div class="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+    
+        <!-- Logo & Deskripsi -->
+        <div>
+          <h2 class="text-2xl font-bold tracking-wide mb-2">Foodcourt FPMIPA</h2>
+          <p class="text-sm text-gray-300">
+            Menyediakan aneka masakan rumahan dengan cita rasa khas, harga terjangkau, dan suasana nyaman tanpa tenant lain. Cocok untuk mahasiswa dan civitas akademika.
+          </p>
+        </div>
+    
+        <!-- Navigasi -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Navigasi</h3>
+          <ul class="space-y-2 text-sm text-gray-300">
+            <li><a href="#about" class="hover:text-white">Tentang Kami</a></li>
+            <li><a href="#products" class="hover:text-white">Menu Popular</a></li>
+            <li><a href="#contact" class="hover:text-white">Kontak</a></li>
+            <li><a href="#partners" class="hover:text-white">Partner</a></li>
+          </ul>
+        </div>
+    
+        <!-- Jam Operasional -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Jam Operasional</h3>
+          <ul class="text-sm text-gray-300 space-y-1">
+            <li>Senin - Jumat: 07.00 - 16.00</li>
+            <li>Sabtu & Minggu: Tutup</li>
+          </ul>
+        </div>
+    
+        <!-- Kontak -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Hubungi Kami</h3>
+          <ul class="text-sm text-gray-300 space-y-1">
+            <li>Telp: 0811-2190-090</li>
+            <li>Alamat: Kampus FPMIPA  A GEDUNG JICA, Universitas Pendidikan Indonesia</li>
+          </ul>
+        </div>
+    
+      </div>
+    
+      <div class="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+        &copy; 2025 Foodcourt FPMIPA. All rights reserved.
+      </div>
+    </footer>
+    
+    
+  </main>
+
+  <script>
+    // Navbar toggle
+    const menuToggle = document.getElementById("menu-toggle");
+    const navbar = document.getElementById("navbar");
+
+    menuToggle.addEventListener("click", () => {
+      navbar.classList.toggle("translate-x-full");
+    });
+
+    // Scroll reveal
+    const sections = document.querySelectorAll(".section");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    // Slider logic
+    const slider = document.getElementById("slider");
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+
+    let index = 0;
+    const totalSlides = slider.children.length;
+
+    function showSlide(idx) {
+      slider.style.transform = `translateX(-${idx * 100}%)`;
+    }
+
+    nextBtn.addEventListener("click", () => {
+      index = (index + 1) % totalSlides;
+      showSlide(index);
+    });
+
+    prevBtn.addEventListener("click", () => {
+      index = (index - 1 + totalSlides) % totalSlides;
+      showSlide(index);
+    });
+
+    // Auto-slide
+    setInterval(() => {
+      index = (index + 1) % totalSlides;
+      showSlide(index);
+    }, 5000);
+  </script>
+
+<script type="text/javascript">
+  const toggleMenu = () => {
+    document.body.classList.toggle("open");
+  };
+</script>
+
+</body>
+
+>>>>>>> a9938b6a2bcf643cab51a41528b75736c85f5ba8
 </html>
