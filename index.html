@@ -42,7 +42,7 @@
         <nav class="navbar">
           <a class="navbar-logo" href="">Foodcourt FPMIPA</a>
         </nav>
-        <button class="navbar-burger" onclick="toggleMenu()"></button>
+        <button class="navbar-burger text-2xl text-white" onclick="toggleMenu()">☰</button>
         <nav class="menu">
           <a href="#" style="animation-delay: 0.1s">Home</a>
           <a href="#about" style="animation-delay: 0.2s">About</a>
@@ -52,6 +52,7 @@
         </nav>
       </div>
     </div>
+    
 
     <!-- Hero Slider -->
     <div class="min-h-screen flex items-center justify-center">
@@ -329,12 +330,11 @@
 
   <script>
     // Navbar toggle
-    let menuToggle = document.getElementById("menu-toggle");
-    let navbar = document.getElementById("navbar");
+    const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
 
-    menuToggle.addEventListener("click", () => {
-      navbar.classList.toggle("translate-x-full");
-    });
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');});
 
     // Scroll reveal
     let sections = document.querySelectorAll(".section");
